@@ -1,0 +1,180 @@
+Q1. XOR gate is one of the basic logic gates out of the seven basic logic gates.
+
+The truth table of XOR gate is as follows
+
+A B O/P
+0 0 0
+0 1 1
+1 0 1
+1 1 0
+
+Given two strings containing only values 0 and 1 you have to perform the XOR of the two strings and print the
+resultant value.
+
+Solve this problem.
+
+Note: You can modify three lines in the given code at the most and you cannot add new lines to the code.
+
+Input Format
+
+The input consists of two lines. The first line of the input contains the first string, S, and the second line
+contains the second string, T.
+
+Constraints
+
+1&lt;=|S|&lt;=10000
+
+|S|=|T|
+
+Output Format
+
+In a single line print the string obtained by the XOR of the two input strings.
+
+Sample Input
+
+10101
+00101
+
+Sample Output
+
+10000
+s=input()
+t=input()
+ans=&quot;&quot;
+for i in range(len(s)):
+if s[i]=t[i]:
+ans=&#39;0&#39;
+else: ans=&#39;1&#39;
+print(ans)
+undefined
+
+
+Q2. The following program is used division of two numbers. There are some problems in the program. Solve
+the problem.
+#include &lt;iostream&gt;
+int main()
+{
+int firstNumber, secondNumber, divOfTwoNumbers;
+cout &lt;&lt; &quot;Enter two integers: &quot;;
+cin &gt;&gt; firstNumber &gt;&gt; secondNumber;
+divOfTwoNumbers = firstNumber/secondNumber;
+cout &lt;&lt; firstNumber &lt;&lt; &quot;/&quot; &lt;&lt; secondNumber &lt;&lt; &quot; = &quot; &lt;&lt; divOfTwoNumbers;
+return 0;
+}
+
+
+Q3. Find the bugs in the following program.
+#include&lt;iostream&gt;
+int main()
+{
+int i = 0;
+
+for(i = 0; i &lt; 3; i++);
+{
+printf(&quot;Amity &quot;);
+}
+return 0;
+}
+
+
+Q4. Following is a C++ Program to Find ASCII Value of a Character. It has some errors. Debug the following
+program.
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+int c;
+cout &lt;&lt; &quot;Enter a character: &quot;;
+cin &gt;&gt; c;
+cout &lt;&lt; &quot;ASCII Value of c is&quot;&lt;&lt; c;
+return 0;
+}
+
+
+Q5. Following is a C++ Program to convert binary number to decimal
+It has some errors. Debug the following program.
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+
+int convertBinaryToDecimal(long long);
+int main()
+{
+long long n;
+cout &lt;&lt; &quot;Enter a binary number: &quot;;
+cin &gt;&gt; n;
+cout &lt;&lt; n &lt;&lt; &quot; in binary = &quot; &lt;&lt; convertBinaryToDecimal(n) &lt;&lt; &quot;in decimal&quot;;
+return 0;
+}
+int convertBinaryToDecimal(long long n)
+{
+int decimalNumber = 0, i = 0, remainder;
+while (n!=0)
+{
+remainder = n%10;
+n /= 10;
+decimalNumber = remainder*pow(i,2);
+++i;
+}
+return decimalNumber;
+}
+
+
+Q 6. Debug the code.
+Int main()
+{
+int x;
+for(x=-1; x&lt;=10; x++)
+{
+if(x &lt; 5)
+continue;
+else
+break;
+printf(&quot;Cyber Cup&quot;);
+
+}
+return 0;
+}
+
+Q7. Debug the code.
+#include &lt;stdio.h&gt;
+int main() {
+int x = 1;
+while(x = 0)
+printf(&quot;hello&quot;);
+}
+
+
+Q8. Debug the code.
+#include &lt;stdio.h&gt;
+int main() {
+int x = 0, y = 0;
+if(x &gt; 0)
+
+if(y &gt; 0)
+printf(&quot;True&quot;);
+else
+printf(&quot;False&quot;);
+}
+
+Q9. Debug the code.
+void main()
+{
+int a = 1, b=2, c=3;
+char d = 0;
+if(a,b,c,d)
+{
+printf(&quot;EXAM&quot;);
+}
+}
+
+
+Q10. Write a corrected code of the following program segment.
+void main()
+{
+int a,b;
+cin&lt;&lt;a;
+b=a;
+cout &lt;&lt;&quot;b=&quot;,a;
+};
+
