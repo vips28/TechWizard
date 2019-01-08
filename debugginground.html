@@ -1,180 +1,180 @@
-Q1. XOR gate is one of the basic logic gates out of the seven basic logic gates.
+<p><b>Q1. XOR gate is one of the basic logic gates out of the seven basic logic gates.</b></p><br>
 
-The truth table of XOR gate is as follows
+The truth table of XOR gate is as follows<br><br>
 
-A B O/P
-0 0 0
-0 1 1
-1 0 1
-1 1 0
+A B O/P<br>
+0 0 0<br>
+0 1 1<br>
+1 0 1<br>
+1 1 0<br><br>
 
 Given two strings containing only values 0 and 1 you have to perform the XOR of the two strings and print the
-resultant value.
+resultant value.<br><br>
 
-Solve this problem.
+Solve this problem.<br><br>
 
-Note: You can modify three lines in the given code at the most and you cannot add new lines to the code.
+Note: You can modify three lines in the given code at the most and you cannot add new lines to the code.<br><br>
 
-Input Format
+Input Format<br><br>
 
-The input consists of two lines. The first line of the input contains the first string, S, and the second line
-contains the second string, T.
+<p>The input consists of two lines. The first line of the input contains the first string, S, and the second line
+  contains the second string, T.</p>
 
-Constraints
+Constraints<br>
 
-1&lt;=|S|&lt;=10000
+1&lt;=|S|&lt;=10000<br>
 
-|S|=|T|
+|S|=|T|<br><br>
 
-Output Format
+Output Format<br><br>
 
-In a single line print the string obtained by the XOR of the two input strings.
+In a single line print the string obtained by the XOR of the two input strings.<br><br>
 
-Sample Input
+Sample Input<br><br>
 
-10101
-00101
+10101<br>
+00101<br><br>
 
-Sample Output
+Sample Output<br>
 
-10000
-s=input()
-t=input()
-ans=&quot;&quot;
-for i in range(len(s)):
-if s[i]=t[i]:
-ans=&#39;0&#39;
-else: ans=&#39;1&#39;
-print(ans)
-undefined
-
-
-Q2. The following program is used division of two numbers. There are some problems in the program. Solve
-the problem.
-#include &lt;iostream&gt;
-int main()
-{
-int firstNumber, secondNumber, divOfTwoNumbers;
-cout &lt;&lt; &quot;Enter two integers: &quot;;
-cin &gt;&gt; firstNumber &gt;&gt; secondNumber;
-divOfTwoNumbers = firstNumber/secondNumber;
-cout &lt;&lt; firstNumber &lt;&lt; &quot;/&quot; &lt;&lt; secondNumber &lt;&lt; &quot; = &quot; &lt;&lt; divOfTwoNumbers;
-return 0;
-}
+10000<br>
+s=input()<br>
+t=input()<br>
+ans=&quot;&quot;<br>
+for i in range(len(s)):<br>
+if s[i]=t[i]:<br>
+ans=&#39;0&#39;<br>
+else: ans=&#39;1&#39;<br>
+print(ans)<br>
+undefined<br><br><br>
 
 
-Q3. Find the bugs in the following program.
-#include&lt;iostream&gt;
-int main()
-{
-int i = 0;
+<p><b>Q2. The following program is used division of two numbers. There are some problems in the program. Solve
+  the problem.</b></p><br>
+#include &lt;iostream&gt;<br>
+int main()<br>
+{<br>
+int firstNumber, secondNumber, divOfTwoNumbers;<br>
+cout &lt;&lt; &quot;Enter two integers: &quot;;<br>
+cin &gt;&gt; firstNumber &gt;&gt; secondNumber;<br>
+divOfTwoNumbers = firstNumber/secondNumber;<br>
+cout &lt;&lt; firstNumber &lt;&lt; &quot;/&quot; &lt;&lt; secondNumber &lt;&lt; &quot; = &quot; &lt;&lt; divOfTwoNumbers;<br>
+return 0;<br>
+}<br><br><br>
 
-for(i = 0; i &lt; 3; i++);
-{
-printf(&quot;Amity &quot;);
-}
-return 0;
-}
+<p><b>
+Q3. Find the bugs in the following program..</b></p><br><br>
+#include&lt;iostream&gt;<br>
+int main()<br>
+{<br>
+int i = 0;<br>
 
+for(i = 0; i &lt; 3; i++);<br>
+{<br>
+printf(&quot;Amity &quot;);<br>
+}<br>
+return 0;<br>
+}<br>
 
+<br><br>
 Q4. Following is a C++ Program to Find ASCII Value of a Character. It has some errors. Debug the following
-program.
-#include &lt;iostream&gt;
-using namespace std;
+program.<br>
+#include &lt;iostream&gt;<br>
+using namespace std;<br>
+<br>
+int main()<br>
+{<br>
+int c;<br>
+cout &lt;&lt; &quot;Enter a character: &quot;;<br>
+cin &gt;&gt; c;<br>
+cout &lt;&lt; &quot;ASCII Value of c is&quot;&lt;&lt; c;<br>
+return 0;<br>
+}<br>
 
-int main()
-{
-int c;
-cout &lt;&lt; &quot;Enter a character: &quot;;
-cin &gt;&gt; c;
-cout &lt;&lt; &quot;ASCII Value of c is&quot;&lt;&lt; c;
-return 0;
-}
-
-
-Q5. Following is a C++ Program to convert binary number to decimal
-It has some errors. Debug the following program.
-#include &lt;iostream&gt;
+<br><br>
+Q5. Following is a C++ Program to convert binary number to decimal<br>
+It has some errors. Debug the following program.<br>
+#include &lt;iostream&gt;<br>
 #include &lt;cmath&gt;
+<br>
+int convertBinaryToDecimal(long long);<br>
+int main()<br>
+{<br>
+long long n;<br>
+cout &lt;&lt; &quot;Enter a binary number: &quot;;<br>
+cin &gt;&gt; n;<br>
+cout &lt;&lt; n &lt;&lt; &quot; in binary = &quot; &lt;&lt; convertBinaryToDecimal(n) &lt;&lt; &quot;in decimal&quot;;<br>
+return 0;<br>
+}<br>
+int convertBinaryToDecimal(long long n)<br>
+{<br>
+int decimalNumber = 0, i = 0, remainder;<br>
+while (n!=0)<br>
+{<br>
+remainder = n%10;<br>
+n /= 10;<br>
+decimalNumber = remainder*pow(i,2);<br>
+++i;<br>
+}<br>
+return decimalNumber;<br>
+}<br>
 
-int convertBinaryToDecimal(long long);
-int main()
-{
-long long n;
-cout &lt;&lt; &quot;Enter a binary number: &quot;;
-cin &gt;&gt; n;
-cout &lt;&lt; n &lt;&lt; &quot; in binary = &quot; &lt;&lt; convertBinaryToDecimal(n) &lt;&lt; &quot;in decimal&quot;;
-return 0;
-}
-int convertBinaryToDecimal(long long n)
-{
-int decimalNumber = 0, i = 0, remainder;
-while (n!=0)
-{
-remainder = n%10;
-n /= 10;
-decimalNumber = remainder*pow(i,2);
-++i;
-}
-return decimalNumber;
-}
-
-
+<br><br>
 Q 6. Debug the code.
-Int main()
-{
-int x;
-for(x=-1; x&lt;=10; x++)
-{
-if(x &lt; 5)
-continue;
-else
-break;
-printf(&quot;Cyber Cup&quot;);
-
-}
-return 0;
-}
-
-Q7. Debug the code.
-#include &lt;stdio.h&gt;
-int main() {
-int x = 1;
-while(x = 0)
-printf(&quot;hello&quot;);
-}
-
-
+<br>Int main()<br>
+{<br>
+int x;<br>
+for(x=-1; x&lt;=10; x++)<br>
+{<br>
+if(x &lt; 5)<br>
+continue;<br>
+else<br>
+break;<br>
+printf(&quot;Cyber Cup&quot;);<br>
+<br>
+}<br>
+return 0;<br>
+}<br>
+<br><br>
+Q7. Debug the code.<br><br>
+#include &lt;stdio.h&gt;<br>
+int main() {<br>
+int x = 1;<br>
+while(x = 0)<br>
+printf(&quot;hello&quot;);<br>
+}<br>
+<br>
+<br>
 Q8. Debug the code.
-#include &lt;stdio.h&gt;
-int main() {
-int x = 0, y = 0;
-if(x &gt; 0)
-
-if(y &gt; 0)
-printf(&quot;True&quot;);
-else
+<br>#include &lt;stdio.h&gt;
+<br>int main() {
+<br>int x = 0, y = 0;
+<br>if(x &gt; 0)
+<br>
+<br>if(y &gt; 0)
+<br>printf(&quot;True&quot;);
+else<br>
 printf(&quot;False&quot;);
-}
-
-Q9. Debug the code.
+}<br>
+<br><br>
+Q9. Debug the code.<br><br>
 void main()
-{
+{<br>
 int a = 1, b=2, c=3;
-char d = 0;
-if(a,b,c,d)
-{
-printf(&quot;EXAM&quot;);
-}
-}
-
+<br>char d = 0;
+<br>if(a,b,c,d)
+<br>{
+<br>printf(&quot;EXAM&quot;);
+<br>}
+<br>}
+<br><br>
 
 Q10. Write a corrected code of the following program segment.
-void main()
-{
-int a,b;
-cin&lt;&lt;a;
-b=a;
-cout &lt;&lt;&quot;b=&quot;,a;
-};
+<br>void main()
+<br>{
+<br>int a,b;
+<br>cin&lt;&lt;a;
+<br>b=a;
+<br>cout &lt;&lt;&quot;b=&quot;,a;
+<br>};
 
