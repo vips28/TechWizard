@@ -1,5 +1,5 @@
-Techwizard Questions
-
+<b>Techwizard Questions</b><br><br><br>
+<p>
 Q1.  Alice and Bob are playing a game with a (N+1)×(M+1)(N+1)×(M+1) table. Let's denote the cell in the i-th row and j-th column (0≤i≤N, 0≤j≤M) by (i,j). The rules of the game are:
 At the beginning, a stone is placed in some cell of the table.
 The players alternate turns, Alice goes first.
@@ -7,49 +7,53 @@ In each turn, the current player must move the stone from its current cell (let'
 As soon as the stone is placed in a cell (x,y) with x=0or y=0, the game ends.
 The winner of the game is determined by the cell the stone ended up in and the player who moved it there; you are given this information for all possible terminal cells on the input. (Note that the stone never reaches the cell (0,0).)
 You should answer Q queries. In each query, you are given the initial position (x,y) of the stone, and you should determine the winner of the game.
- 
+</p><br>
+
 Input
+<br>
+<p>
 The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
 The first line of each test case contains a single string with length M. For each ii (1≤i≤M), the i-th digit of this string is '1' if the player that moves the stone to the cell (0,i) loses the game or '0' if this player wins.
 The second line contains a single string with length N. For each ii (1≤i≤N), the i-th digit of this string is '1' if the player that moves the stone to the cell (i,0) loses the game or '0' if this player wins.
 The third line contains a single integer Q denoting the number of queries.
 Each of the following QQ lines contains two space-separated integers x and y describing one query.
- 
-Output
-For each test case, print a single line containing a string with length Q. For each valid i, the i-th digit should be '1' if Alice wins the game for query ii or '0' if Bob wins that game.
- 
-Constraints
-1≤N,M,Q≤10^5
-1≤x≤N
-1≤y≤M
-the sum of N+M+Q over all test cases does not exceed 10^6
- 
-Subtasks
-Subtask #1 (30 points): the sum of N+M over all test cases does not exceed 10^3
-Subtask #2 (70 points): original constraints
- 
-Example Input
-1
-101
-01
-6
-1 1
-1 2
-1 3
-2 1
-2 2
-2 3
-Example Output
-110011
- 
+</p>
+<br>
+Output<br><p>
+For each test case, print a single line containing a string with length Q. For each valid i, the i-th digit should be '1' if Alice wins the game for query ii or '0' if Bob wins that game.</p>
+ <br>
+Constraints<br>
+1≤N,M,Q≤10^5<br>
+1≤x≤N<br>
+1≤y≤M<br>
+The sum of N+M+Q over all test cases does not exceed 10^6
+<br> <br>
+Subtasks<br>
+<br>Subtask #1 (30 points): the sum of N+M over all test cases does not exceed 10^3
+<br>Subtask #2 (70 points): original constraints
+ <br>
+Example Input<br>
+1<br>
+101<br>
+01<br>
+6<br>
+1 1<br>
+1 2<br>
+1 3<br>
+2 1<br>
+2 2<br>
+2 3<br><br>
+Example Output<br>
+110011<br>
+<br> <br>
 Q2.  Lower Bound-STL In C++
- 
+ <br><p>
 Logic:- So basically is this Lower Bound-STL(Lower bound is a function that can be used with a sorted vector.) problem an array is given and number of query Q(an integer) is given we have to find that if a Query is present in an array then program returns an index of a number with "Yes" without quotes and if the query is not present then it should return "No" without quotes and also number greater than query. If you do not get don't worry I am here let's take an example.
- 
+</p><br>
 Explanation:-
- 
+ <br>
 Sample Input
- 
+ <br>
  8                          // Array Size
  1 1 2 2 6 9 9 15  // Array elements
  4                         // Number of Query
